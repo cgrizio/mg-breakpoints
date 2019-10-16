@@ -1,0 +1,490 @@
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+  }
+
+body{
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    line-height: 1.45;
+}
+
+
+/* ----- TYPOGRAPHY ----- */
+
+p {
+    margin-bottom: 1.25rem;
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 2;
+}
+
+b{
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    line-height: 1.3;
+  }
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    margin: 0 0 0.75rem 0;
+    font-weight: 100;
+    font-size: 3.052rem;
+    font-size: 9.5vw;
+    font-size: 2.2rem;
+}
+
+h2 {
+    font-size: 2.441rem;
+    font-weight: 100;
+}
+
+h3 {font-size: 1.953rem;}
+
+h4 {font-size: 1.563rem}
+
+h5 {font-size: 1.25rem;}
+
+h6 {font-size: 1rem;}
+
+small, .text_small {font-size: 0.8em;}
+
+
+/* ----- DESKTOP TYPOGRAPHY ----- */
+@media (min-width:1024px) {
+    p {
+        margin-bottom: 1.25rem;
+        font-size: 1rem;
+    }
+    
+    h1 {
+        margin-bottom: 0.75rem;
+        font-size: 3.052rem;
+        margin-bottom: 1vw;
+        font-size: 3vw;
+        font-size: 3vmax;
+    }
+    
+    h2 {font-size: 2.441rem;}
+    
+    h3 {font-size: 1.953rem;}
+    
+    h4 {font-size: 1.563rem;}
+    
+    h5 {font-size: 1.25rem;}
+    
+    h6 {font-size: 1rem;}
+}
+
+/* ----- LINKS ----- */
+
+a{
+    color:#fff;
+}
+
+a:hover{
+    color:#fff;
+    text-decoration: none;
+}
+
+/* ----- BTN ----- */
+
+a.main-cta{
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.05rem;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 0.8rem 1.7rem;
+    border: 2px solid #fff;
+    transition: all ease 0.4s;
+}
+     
+a.main-cta:hover{
+    background-color:  rgb(104, 76, 148);
+    background-color:  #482B73;
+}
+
+/* ----- LABELS ----- */
+
+span.label{
+    display: inline-block;
+    font-size: 0.8rem;
+    font-weight: 600;
+    background-color: #fff;
+    color: #00b3cd;
+    padding: 0.35rem 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+/* ------------------------ NAV ------------------------ */
+
+nav{
+    background-color:#482b73;
+}
+    nav.navbar.navbar-expand-lg{
+        position: fixed;
+        top:0;
+        width:100%;
+        z-index: 1000;
+        padding: 0.5rem 1rem;
+    }
+        .navbar-brand img{
+            width: 9rem;
+        }
+
+        .navbar-brand .event-name{
+            display:inline-block;
+        }
+
+        nav.navbar ul{
+            padding: 2rem 1rem 3rem 1rem;
+        }
+
+        nav.navbar li{
+            margin: 0 1rem;
+        }
+
+        nav.navbar li a.nav-link{
+            font-size: 1.2rem;
+            line-height: 3;
+            font-weight: 200;
+            text-align: center;
+            padding: 0.5rem; 
+            border-bottom: 1px solid rgba(255, 255, 255, 0);
+            transition: all ease 0.5s;
+            color: #fff!important;
+        }
+
+        nav.navbar li a.nav-link:hover{
+            border-bottom: 1px solid #fff;
+        }
+
+        nav.navbar li a.nav-link.nav-link-outlined{
+            text-transform: uppercase;
+            font-size: 1rem;
+            letter-spacing: 0.07rem;
+            line-height: 2;
+            border: 1px solid #fff;
+            padding: 0.5rem 1.5rem;
+            margin-top: 1rem;
+            transition: all ease 0.4s;
+        }
+
+        nav.navbar li:nth-child(3) a.nav-link:hover{
+            background-color:  rgb(104, 76, 148);
+        }
+
+
+
+/* -- NAV DESKTOP -- */
+@media (min-width:1024px) {
+    nav.navbar.navbar-expand-lg{
+        padding: 1rem 4rem;}
+
+    .navbar-brand img{
+        width: 13rem;
+    } 
+
+    nav.navbar ul{
+        padding: 0;
+    }
+
+    nav.navbar li a.nav-link{
+        font-size: 0.9rem;
+        text-align: left; 
+        line-height: 1.45;      
+    }
+
+    nav.navbar li a.nav-link.nav-link-outlined{
+        font-size: 0.8rem;
+        letter-spacing: 0.05rem;
+        line-height: 1.45;
+        padding: 0.5rem 1.5rem;
+        margin-top: 0;
+    }
+}         
+
+/* ------------------------- SECTION 1 ------------------------ */
+
+#section-1{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding-top:5rem;
+    height: 100vh;
+    overflow: hidden;
+}
+
+    #section-1 .main-text{
+        width:100%;
+        padding: 1rem 1.7rem;
+        text-align: left;
+        position: absolute;
+        z-index: 3;
+        color: #fff;
+    }
+        /*-Title--*/
+        #section-1 .main-text h1 {
+            margin-bottom: 1.7rem;
+        }
+
+        /*-Subtitle--*/
+        #section-1 .main-text h4{
+            font-size: 1.3rem;
+            line-height: 1.6;
+        }
+
+        /*-Overlay--*/
+        #section-1 .main-text h6{
+            margin: 9vh auto 5vh auto;
+        }
+
+        #section-1 a.main-cta{
+            margin: 0 auto 3rem auto;
+        }
+
+    #section-1 img{
+        min-height: 100vh;
+        min-width: 100%;
+    }
+
+    /*-Overlay--*/
+    #section-1 img:nth-child(2){
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        mix-blend-mode: multiply;
+    }
+
+    /*-Imagen Fondo--*/
+    #section-1 img:nth-child(3){
+        position: fixed;
+        top:2rem;
+        left:-159%;
+        z-index: 0;
+    }
+
+
+/* -- SECTION 1 - DESKTOP -- */
+
+@media (min-width:768px) {
+
+    #section-1 .main-text{
+        text-align: center;
+        padding: 1rem 7rem;
+    }
+
+    #section-1 .main-text h4 {
+        font-size: 1.7rem;
+        font-size: 1.7vmax;
+    }
+   
+    #section-1 .main-text h6{
+        font-size: 1.15rem;
+    }
+
+    /*-Imagen Fondo--*/
+    #section-1 img:nth-child(3){
+        top:0;
+        left:0;
+    }
+}     
+
+/*------------------ SECTION 2 - Quienes somos ------------------*/
+
+#section-2{
+    position: relative;
+    padding: 3rem 0;
+    background-color: #fff;
+    z-index: 2;
+}
+
+#section-2 h2, #section-2 p{
+    text-align: center;
+}
+
+#section-2 h2{
+    padding-bottom: 1rem;
+}
+
+#section-2 .row .col-lg-6:nth-child(1){
+    padding: 2rem;
+}
+
+#section-2 .row .col-lg-6:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#section-2 img{
+    width: 100%;
+    padding: 0 5%;
+}
+
+#section-2 iframe{
+    width: 100vw;
+    height: 56vw;
+}
+
+/* -- SECTION 1 - DESKTOP -- */
+
+@media (min-width:1024px) {
+    #section-2{
+        padding: 7rem 0;
+    }  
+    #section-2 h2, #section-2 p{
+        text-align: right;
+    }  
+    #section-2 iframe{
+        width: 426px;
+        height:240px;
+    }
+}  
+
+/* ------------------ SECTION 3  - Oradores ------------------ */
+
+#section-3{
+    position: relative;
+    padding: 5rem 0 2.5rem 0;
+    background-color: #f6f5fa;
+    z-index: 2;
+    text-align: center;
+}
+
+#section-3 h2{
+    color: #6d6294;
+}
+
+#section-3 h6{
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-top: 1.5rem;
+}
+
+#section-3 .row{
+    margin: 5rem auto 0 auto;
+}
+
+#section-3 img{
+    width: 56%;
+}
+
+#section-3 .row .col-lg-3.col-md-6 {
+    margin-bottom: 2.5rem;
+}
+
+@media (min-width:768px){
+    #section-3 img{
+        width: 73%;
+    } 
+}
+
+/* ------------------ SECTION 4  - Agenda ------------------ */
+
+#section-4{
+    position: relative;
+    padding: 5rem 0;
+    background-color: #5f52a4;
+    color: #fff;
+    z-index: 2;
+}
+
+    #section-4 img{
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+
+    #section-4 p{
+        line-height: 1.6;
+    }
+
+    #section-4 h2{
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    #section-4 h4{
+        font-weight: 500;
+        margin-bottom: 0.3rem;
+    }
+
+    #section-4 h6{
+        font-size: 0.9rem;
+        font-weight: 200;
+        margin-bottom: 1rem;
+    }
+
+    #section-4 p{
+        margin-bottom: 0.5rem;
+    }
+
+    #section-4 .container .row{
+        margin: 3rem auto 0 auto;
+    }
+
+    #section-4 .col-sm-9{
+        padding: 0.5rem 1rem;
+    }
+
+    #section-4 .row:last-child{
+       /*  background-color: #483d82; */
+        padding: 1.3rem 2rem;
+        margin: 2rem auto 0 auto;
+        width: calc(100% - 30px);
+        display: flex;
+        align-items: center;
+    }
+
+    #section-4 a.main-cta{
+        margin-top: 1rem;
+    }
+
+    #section-4 a.main-cta:hover{
+        background-color:  rgb(72, 58, 141);
+    }
+
+@media (min-width:1024px){
+    #section-4 h2{
+        padding-bottom: 2rem;
+    }
+}
+
+/* ------------------ FOOTER ------------------ */
+
+footer{
+    position: relative;
+    display:flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 2rem 4rem;
+    background-color: #2f2851;
+    color: #fff;
+    z-index: 2;
+}
+
+    footer img{
+        margin: 1rem auto 2rem auto;
+        max-width: 5rem;
+    }
+
+    footer small{
+        font-size: 0.8rem;
+    }
+
+ @media (min-width:1280px) {
+    footer{
+        flex-direction: row; 
+    } 
+    
+    footer img{
+        margin: 0 0 0 auto;
+        max-width: 5rem;
+    }
+ }      
